@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2975533068944890314}
   - component: {fileID: 4077879269890584487}
   - component: {fileID: 6252777214255197604}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MercuryPlatformGrid3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -77,7 +77,7 @@ GameObject:
   - component: {fileID: 6063559383452672420}
   - component: {fileID: 3143813956543673735}
   - component: {fileID: 7154228953128436568}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -176,7 +176,7 @@ GameObject:
   - component: {fileID: 6465314643926826259}
   - component: {fileID: 4817519840297670259}
   - component: {fileID: 2969563552493910337}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tilemap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -525,6 +525,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fire
       objectReference: {fileID: 0}
+    - target: {fileID: 5512221643349961381, guid: c27034e3fce540346b554d13b08e0abb, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 6055833194085234367, guid: c27034e3fce540346b554d13b08e0abb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 98.47348
@@ -587,6 +591,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: oxygenitem (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 636973441298307333, guid: 78820c91d8204ee4ea5baa8203f479cf, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1657631164007232840, guid: 78820c91d8204ee4ea5baa8203f479cf, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2223539182346057589, guid: 78820c91d8204ee4ea5baa8203f479cf, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5211829258398791422, guid: 78820c91d8204ee4ea5baa8203f479cf, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 5749275528137726729, guid: 78820c91d8204ee4ea5baa8203f479cf, type: 3}
       propertyPath: m_LocalPosition.x
       value: 95.40727
@@ -631,6 +651,10 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9063759806337021576, guid: 78820c91d8204ee4ea5baa8203f479cf, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -652,6 +676,22 @@ PrefabInstance:
     - target: {fileID: 636973441298307333, guid: 78820c91d8204ee4ea5baa8203f479cf, type: 3}
       propertyPath: m_Name
       value: oxygenitem (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 636973441298307333, guid: 78820c91d8204ee4ea5baa8203f479cf, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1657631164007232840, guid: 78820c91d8204ee4ea5baa8203f479cf, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2223539182346057589, guid: 78820c91d8204ee4ea5baa8203f479cf, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5211829258398791422, guid: 78820c91d8204ee4ea5baa8203f479cf, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5749275528137726729, guid: 78820c91d8204ee4ea5baa8203f479cf, type: 3}
       propertyPath: m_LocalPosition.x
@@ -693,6 +733,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9063759806337021576, guid: 78820c91d8204ee4ea5baa8203f479cf, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -714,6 +758,22 @@ PrefabInstance:
     - target: {fileID: 636973441298307333, guid: 78820c91d8204ee4ea5baa8203f479cf, type: 3}
       propertyPath: m_Name
       value: oxygenitem
+      objectReference: {fileID: 0}
+    - target: {fileID: 636973441298307333, guid: 78820c91d8204ee4ea5baa8203f479cf, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1657631164007232840, guid: 78820c91d8204ee4ea5baa8203f479cf, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2223539182346057589, guid: 78820c91d8204ee4ea5baa8203f479cf, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5211829258398791422, guid: 78820c91d8204ee4ea5baa8203f479cf, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5749275528137726729, guid: 78820c91d8204ee4ea5baa8203f479cf, type: 3}
       propertyPath: m_LocalPosition.x
@@ -763,6 +823,10 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9063759806337021576, guid: 78820c91d8204ee4ea5baa8203f479cf, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -784,6 +848,10 @@ PrefabInstance:
     - target: {fileID: 5512221643349961381, guid: c27034e3fce540346b554d13b08e0abb, type: 3}
       propertyPath: m_Name
       value: Fire (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5512221643349961381, guid: c27034e3fce540346b554d13b08e0abb, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6055833194085234367, guid: c27034e3fce540346b554d13b08e0abb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -846,6 +914,10 @@ PrefabInstance:
     - target: {fileID: 5512221643349961381, guid: c27034e3fce540346b554d13b08e0abb, type: 3}
       propertyPath: m_Name
       value: Fire (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5512221643349961381, guid: c27034e3fce540346b554d13b08e0abb, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6055833194085234367, guid: c27034e3fce540346b554d13b08e0abb, type: 3}
       propertyPath: m_LocalPosition.x
