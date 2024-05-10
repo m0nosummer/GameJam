@@ -36,7 +36,8 @@ public class UIManager : MonoBehaviour
                 planetSprite.GetComponent<Image>().sprite = infoData.mercurySprite;
                 break;
         }
-        
+
+        moveSceneIdx = infoData.gameLevel + 1;
     }
 
     public void OnStart()
