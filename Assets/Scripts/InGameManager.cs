@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class InGameManager : MonoBehaviour
 {
-    public InfoData _InfoData;
+    public InfoData infoData;
     
     public float maxOxygen = 100f;
     public float currentOxygen;
@@ -67,12 +68,13 @@ public class InGameManager : MonoBehaviour
         // 게임 오버 처리 로직 작성
         if (currentVoteRate >= voteRateThreshold)
         {
-            
+            infoData.gameLevel += 1;
+            Debug.Log("You win");
         }
         else
         {
-            
+            Debug.Log("You lose");
         }
-        Debug.Log("Game Over!");
+        SceneManager.LoadScene(0);
     }
 }
