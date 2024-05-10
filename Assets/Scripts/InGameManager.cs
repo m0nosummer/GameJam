@@ -18,7 +18,7 @@ public class InGameManager : MonoBehaviour
     public float voteRateDecreaseRate = 2f;
     public float voteRateIncreaseRate = 10f;
 
-    public float voteRateThreshold;
+    public float voteRateThreshold = 50.1f;
     
     public Slider oxygenSlider;
     public Slider voteSlider;
@@ -75,6 +75,6 @@ public class InGameManager : MonoBehaviour
         {
             Debug.Log("You lose");
         }
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
 }

@@ -295,7 +295,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fa2c6ac7e8381140b1883d9fea9cefa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _InfoData: {fileID: 0}
+  infoData: {fileID: 0}
   maxOxygen: 100
   currentOxygen: 0
   oxygenDecreaseRate: 5
@@ -408,6 +408,10 @@ PrefabInstance:
     - target: {fileID: 3494180242414843190, guid: 9d246affe524bf54595b9914a347c195, type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4307713249796898451, guid: 9d246affe524bf54595b9914a347c195, type: 3}
+      propertyPath: items
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5245334106512018248, guid: 9d246affe524bf54595b9914a347c195, type: 3}
       propertyPath: m_Layer
