@@ -30,6 +30,7 @@ public class PlatformManager : MonoBehaviour
             var randint = Random.Range(0, platforms.Length);
             Vector2 newpos = new Vector2(transform.position.x-100, transform.position.y + 10);
             var platform = Instantiate(platforms[randint], newpos, Quaternion.identity);
+            Destroy(this.gameObject);
         }
     }
 

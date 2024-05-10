@@ -21,7 +21,7 @@ public class item : MonoBehaviour
             switch (items)
             {
                 case Item.paper:
-                    Debug.Log(collision + " collided");
+                    _inGameManager.IncreaseVoteRate();
                     break;
 
                 case Item.oxygen:
