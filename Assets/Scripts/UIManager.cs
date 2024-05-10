@@ -21,17 +21,17 @@ public class UIManager : MonoBehaviour
     {
         switch (infoData.gameLevel)
         {
-            case 0:
+            case 1:
                 for (int i = 0; i < 3; i++)
                 {
                     textInfos[i].text = infoData.earthInfos[i];
                 }
                 planetSprite.GetComponent<Image>().sprite = infoData.earthSprite;
                 break;
-            case 1:
+            case 2:
                 for (int i = 0; i < 3; i++)
                 {
-                    textInfos[i].text = infoData.earthInfos[i];
+                    textInfos[i].text = infoData.mercuryInfos[i];
                 }
                 planetSprite.GetComponent<Image>().sprite = infoData.mercurySprite;
                 break;
