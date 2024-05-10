@@ -17,7 +17,6 @@ public class PlayerController : MonoBehaviour
     
     private PlayerInput _playerInput;
     private Rigidbody2D _rb;
-    private SpriteRenderer _spriteRenderer;
     private Animator _anim;
     
     #region CHECK PARAMETERS
@@ -35,7 +34,6 @@ public class PlayerController : MonoBehaviour
     {
         _playerInput = GetComponent<PlayerInput>();
         _rb = GetComponent<Rigidbody2D>();
-        _spriteRenderer = GetComponent<SpriteRenderer>();
         _anim = GetComponent<Animator>();
     }
 
@@ -44,6 +42,7 @@ public class PlayerController : MonoBehaviour
         if (Physics2D.OverlapBox(_groundCheckPoint.position, _groundCheckSize, 0, _layerTerrain))
         {
             IsGround = true;
+            _anim.SetBool("IsJump", false);
         }
         
         //x축 부호 바꾸기 (좌우반전)
@@ -77,6 +76,7 @@ public class PlayerController : MonoBehaviour
                 break;
             case InputActionPhase.Canceled:
                 IsGround = false;
+                _anim.SetBool("IsJump", true);
                 break;
         }
     }
@@ -87,7 +87,6 @@ public class PlayerController : MonoBehaviour
         {
             float force = _jumpForce;
             force -= _rb.velocity.y;
-            _anim.SetBool("IsJump", true);
             _rb.AddForce(Vector2.up * force, ForceMode2D.Impulse);
         }
     }
