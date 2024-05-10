@@ -13,7 +13,7 @@ public class PlatformManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("InstantiatePlatform", 3, repeatsecond);
+        
     }
 
     // Update is called once per frame
@@ -22,11 +22,22 @@ public class PlatformManager : MonoBehaviour
         
     }
 
-    void InstantiatePlatform()
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.CompareTag("Player"))
+        {
+            Debug.Log("player");
+            var randint = Random.Range(0, platforms.Length);
+            Vector2 newpos = new Vector2(transform.position.x-100, transform.position.y + 10);
+            var platform = Instantiate(platforms[randint], newpos, Quaternion.identity);
+        }
+    }
+
+    public void InstantiatePlatform()
     {
         var randint = Random.Range(0, platforms.Length);
         var platform = Instantiate(platforms[randint], instantiateTrans.transform.position, Quaternion.identity);
-        platform.GetComponent<Platform>().platformSpeed = platformspeed;
+        
     }
 
     IEnumerator platformMaker()
