@@ -7,5 +7,4 @@ public class PlayerData : ScriptableObject
 {
     [Header("Player Ability")] 
     public float oxygenLeft;
-    public float 
 }
