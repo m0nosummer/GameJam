@@ -8,6 +8,7 @@ public class InGameManager : MonoBehaviour
     public float maxOxygen = 100f;
     public float currentOxygen;
     public float oxygenDecreaseRate = 3f;
+    public float oxygenIncreaseRate = 5f;
     
     public float maxVoteRate = 100f;
     public float currentVoteRate;
@@ -38,9 +39,10 @@ public class InGameManager : MonoBehaviour
         oxygenSlider.value = currentOxygen;
     }
 
-    public void IncreaseOxygen(float amount)
+    public void IncreaseOxygen()
     {
-        currentOxygen += amount;
+        currentOxygen += oxygenIncreaseRate;
+        currentOxygen = Mathf.Clamp(currentOxygen, 0, maxOxygen);
     }
 
     private void GameOver()

@@ -1,19 +1,19 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-public enum Item
-{
-    paper,
-    oxygen
-}
+public enum Item { paper, oxygen }
 
 public class item : MonoBehaviour
 {
-
     public Item items;
-    
+    [SerializeField] private InGameManager _inGameManager;
 
-    
+    private void Awake()
+    {
+        _inGameManager = FindObjectOfType<InGameManager>();
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.gameObject.CompareTag("Player"))
@@ -25,13 +25,13 @@ public class item : MonoBehaviour
                     break;
 
                 case Item.oxygen:
-                    Debug.Log(collision + " collided");
+                    _inGameManager.IncreaseOxygen();
                     break;
 
                 default:
                     break;
             }
-        
+            Destroy(this.gameObject);
         }
     }
 }

@@ -17,7 +17,6 @@ public class PlayerController : MonoBehaviour
     
     private PlayerInput _playerInput;
     private Rigidbody2D _rb;
-    private SpriteRenderer _spriteRenderer;
     private Animator _anim;
     
     #region CHECK PARAMETERS
@@ -35,7 +34,6 @@ public class PlayerController : MonoBehaviour
     {
         _playerInput = GetComponent<PlayerInput>();
         _rb = GetComponent<Rigidbody2D>();
-        _spriteRenderer = GetComponent<SpriteRenderer>();
         _anim = GetComponent<Animator>();
     }
 
