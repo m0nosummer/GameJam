@@ -2,7 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-public enum Item { paper, oxygen }
+public enum Item { paper, oxygen, fire }
 
 public class item : MonoBehaviour
 {
@@ -26,6 +26,10 @@ public class item : MonoBehaviour
 
                 case Item.oxygen:
                     _inGameManager.IncreaseOxygen();
+                    break;
+                
+                case Item.fire:
+                    _inGameManager.IncreaseVoteRate();
                     break;
 
                 default:
