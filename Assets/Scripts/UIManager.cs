@@ -10,4 +10,9 @@ public class UIManager : MonoBehaviour
     {
         SceneManager.LoadScene(moveSceneIdx);
     }
+
+    private void OnSetInfo()
+    {
+        
+    }
 }
