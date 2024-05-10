@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7097133905366374083}
   - component: {fileID: 7225684731627012431}
   - component: {fileID: 8454984380142877528}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -110,7 +110,7 @@ GameObject:
   - component: {fileID: 5117124989343233408}
   - component: {fileID: 7763241643270119371}
   - component: {fileID: 9118617584995304389}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tilemap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -378,7 +378,7 @@ GameObject:
   - component: {fileID: 5170368530261647952}
   - component: {fileID: 7910464891163597242}
   - component: {fileID: 8626292301754239904}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MercuryPlatformGrid1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -443,6 +443,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: oxygenitem
       objectReference: {fileID: 0}
+    - target: {fileID: 636973441298307333, guid: 78820c91d8204ee4ea5baa8203f479cf, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1657631164007232840, guid: 78820c91d8204ee4ea5baa8203f479cf, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2223539182346057589, guid: 78820c91d8204ee4ea5baa8203f479cf, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5211829258398791422, guid: 78820c91d8204ee4ea5baa8203f479cf, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 5749275528137726729, guid: 78820c91d8204ee4ea5baa8203f479cf, type: 3}
       propertyPath: m_LocalPosition.x
       value: 96.462715
@@ -483,6 +499,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9063759806337021576, guid: 78820c91d8204ee4ea5baa8203f479cf, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -504,6 +524,10 @@ PrefabInstance:
     - target: {fileID: 5512221643349961381, guid: c27034e3fce540346b554d13b08e0abb, type: 3}
       propertyPath: m_Name
       value: Fire (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5512221643349961381, guid: c27034e3fce540346b554d13b08e0abb, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6055833194085234367, guid: c27034e3fce540346b554d13b08e0abb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -567,6 +591,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fire
       objectReference: {fileID: 0}
+    - target: {fileID: 5512221643349961381, guid: c27034e3fce540346b554d13b08e0abb, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 6055833194085234367, guid: c27034e3fce540346b554d13b08e0abb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 95.39543
@@ -628,6 +656,10 @@ PrefabInstance:
     - target: {fileID: 5512221643349961381, guid: c27034e3fce540346b554d13b08e0abb, type: 3}
       propertyPath: m_Name
       value: Fire (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5512221643349961381, guid: c27034e3fce540346b554d13b08e0abb, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6055833194085234367, guid: c27034e3fce540346b554d13b08e0abb, type: 3}
       propertyPath: m_LocalPosition.x
