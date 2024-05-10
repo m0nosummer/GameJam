@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7741f6f6d1e9c7045852c38a2498a3c8, type: 3}
   m_Name: Info Data
   m_EditorClassIdentifier: 
-  gameLevel: 0
+  gameLevel: 1
   mercuryInfos:
   - "\uC218\uC131(Mercury)"
   - "\uC218\uC131\uC740 \uB0AE\uC5D0\uB294 \uC12D\uC528 400\uB3C4, \uBC24\uC5D0\uB294
