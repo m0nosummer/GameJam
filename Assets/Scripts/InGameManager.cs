@@ -7,7 +7,8 @@ using UnityEngine.UI;
 public class InGameManager : MonoBehaviour
 {
     public InfoData infoData;
-    
+
+    public bool isGameFinished = false;
     public float maxOxygen = 100f;
     public float currentOxygen;
     public float oxygenDecreaseRate = 5f;
@@ -23,6 +24,8 @@ public class InGameManager : MonoBehaviour
     public Slider oxygenSlider;
     public Slider voteSlider;
 
+    public GameObject PanelWin;
+    public GameObject PanelLose;
 
     private void Start()
     {
@@ -45,7 +48,11 @@ public class InGameManager : MonoBehaviour
         if (currentOxygen <= 0f)
         {
             currentOxygen = 0f;
-            GameOver();
+            if (isGameFinished == false)
+            {
+                GameOver();
+                isGameFinished = true;
+            }
         }
         oxygenSlider.value = currentOxygen;
         voteSlider.value = currentVoteRate;
@@ -68,13 +75,22 @@ public class InGameManager : MonoBehaviour
         // 게임 오버 처리 로직 작성
         if (currentVoteRate >= voteRateThreshold)
         {
+            PanelWin.SetActive(true);
             infoData.gameLevel += 1;
             Debug.Log("You win");
+            Time.timeScale = 0;
         }
         else
         {
+            PanelLose.SetActive(true);
             Debug.Log("You lose");
+            Time.timeScale = 0;
         }
+    }
+
+    public void OnLoadScene()
+    {
         SceneManager.LoadScene(1);
+        Time.timeScale = 1;
     }
 }
